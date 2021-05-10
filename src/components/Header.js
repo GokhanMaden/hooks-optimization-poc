@@ -1,15 +1,13 @@
 import React, { memo } from 'react';
 
-const Header = ({logo}) => {
-
-  console.log('Header Component Called');
-
-  return(
+const Header = ({ logo }) => {
+  console.log('logo: ', logo);
+  return (
     <div style={{ textAlign: 'center' }}>
       <img src={logo} alt="logo"></img>
     </div>
-  )
-}
+  );
+};
 
 export default memo(Header);
 

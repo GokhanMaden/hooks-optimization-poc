@@ -1,9 +1,8 @@
-import React, {memo} from 'react';
+import React, { memo } from 'react';
 
-const ListItem = ({user}) => {
-  console.log('gelen user: ', user);
-  console.log('List Item Component')
-  return <li>{user.name}</li>
-}
+const ListItem = ({ user }) => {
+  console.log('user: ', user);
+  return <li>{user.name}</li>;
+};
 
 export default memo(ListItem);
